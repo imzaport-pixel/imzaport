@@ -1,218 +1,151 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>İmzaPort | E-İmza Başvuru Merkezi</title>
+<title>İmzaPort | E-İmza Hizmetleri</title>
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#f5f7fb;
+background:url("arka-plan.jpg");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.menu{
+background:rgba(0,0,0,0.7);
+padding:15px;
+text-align:center;
+}
+
+.menu a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
 }
 
 .hero{
-background:url("arkaplan.jpg");
-background-size:cover;
-background-position:center;
-height:600px;
-color:white;
 text-align:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-}
-
-.logo{
-width:160px;
-margin-bottom:20px;
+padding:120px 20px;
+background:rgba(0,0,0,0.6);
 }
 
 .hero h1{
-font-size:48px;
-margin:10px;
+font-size:55px;
+color:#00c3ff;
 }
 
 .hero p{
 font-size:20px;
-max-width:600px;
 }
 
-.btn{
-margin-top:20px;
-background:#0b63ce;
+.button{
+display:inline-block;
+padding:14px 30px;
+background:#00c3ff;
 color:white;
-padding:15px 30px;
-border-radius:8px;
 text-decoration:none;
-font-size:18px;
-}
-
-.section{
-padding:60px 20px;
-text-align:center;
+border-radius:8px;
+margin-top:20px;
 }
 
 .services{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:25px;
-margin-top:30px;
+background:white;
+color:black;
+padding:60px;
+text-align:center;
 }
 
-.card{
-background:white;
-padding:25px;
+.box{
+display:inline-block;
 width:220px;
+margin:15px;
+padding:20px;
+background:#f2f2f2;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-.price{
-margin-top:30px;
-font-size:20px;
-}
-
-.form{
-max-width:400px;
-margin:auto;
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
-}
-
-input{
-width:100%;
-padding:12px;
-margin:10px 0;
-border-radius:6px;
-border:1px solid #ccc;
-}
-
-button{
+.contact{
 background:#0b63ce;
-color:white;
-border:none;
-padding:12px;
-width:100%;
-border-radius:8px;
-font-size:16px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-padding:15px 18px;
-border-radius:50px;
-color:white;
-text-decoration:none;
-font-size:18px;
+padding:50px;
+text-align:center;
 }
 
 footer{
 background:#111;
-color:white;
-text-align:center;
 padding:20px;
-margin-top:60px;
+text-align:center;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<section class="hero">
+<div class="menu">
+<a href="#">Ana Sayfa</a>
+<a href="#hizmet">Hizmetler</a>
+<a href="#iletisim">İletişim</a>
+</div>
 
-<img src="logo.png" class="logo">
+<div class="hero">
 
-<h1>E-İMZA & DİJİTAL DÖNÜŞÜM</h1>
+<h1>İMZAPORT</h1>
+<p>E-İmza ve Dijital Dönüşüm Hizmetleri</p>
 
-<p>Resmi işlemlerinizi güvenli, hızlı ve yasal şekilde dijitale taşıyın.</p>
+<a class="button" href="https://wa.me/905385762772">
+WhatsApp Başvuru
+</a>
 
-<a href="#basvuru" class="btn">Başvuru Yap</a>
+</div>
 
-</section>
-
-<section class="section">
+<div id="hizmet" class="services">
 
 <h2>Hizmetlerimiz</h2>
 
-<div class="services">
-
-<div class="card">
-<h3>E-İmza</h3>
-<p>Resmi belgelerde yasal ve güvenli imza.</p>
+<div class="box">
+<h3>Elektronik İmza</h3>
+<p>Resmi işlemler için güvenli e-imza</p>
 </div>
 
-<div class="card">
+<div class="box">
+<h3>Mobil İmza</h3>
+<p>Telefon ile imza çözümleri</p>
+</div>
+
+<div class="box">
 <h3>KEP Adresi</h3>
-<p>Resmi yazışmalar için güvenli e-posta.</p>
+<p>Resmi elektronik posta</p>
 </div>
 
-<div class="card">
-<h3>Mali Mühür</h3>
-<p>E-fatura işlemleri için zorunlu çözüm.</p>
-</div>
-
-<div class="card">
-<h3>Zaman Damgası</h3>
-<p>Belgelerin tarih ve bütünlüğünü korur.</p>
+<div class="box">
+<h3>E-Fatura</h3>
+<p>Dijital fatura sistemleri</p>
 </div>
 
 </div>
 
-<div class="price">
+<div id="iletisim" class="contact">
 
-<h2>Fiyatlarımız</h2>
+<h2>İletişim</h2>
 
-<p>3 Yıl → 2500 TL</p>
-<p>2 Yıl → 2300 TL</p>
-<p>1 Yıl → 1750 TL</p>
+<p>📧 imzaport@gmail.com</p>
+<p>📞 0538 576 27 72</p>
 
-</div>
-
-</section>
-
-<section id="basvuru" class="section">
-
-<div class="form">
-
-<h2>Online Başvuru</h2>
-
-<form action="https://formsubmit.co/mail@gmail.com" method="POST">
-
-<input type="text" name="Ad Soyad" placeholder="Ad Soyad" required>
-
-<input type="text" name="TC" placeholder="TC Kimlik No">
-
-<input type="text" name="Telefon" placeholder="Telefon" required>
-
-<input type="email" name="Email" placeholder="E-posta">
-
-<button type="submit">Başvuruyu Gönder</button>
-
-</form>
+<a class="button" href="https://wa.me/905385762772">
+WhatsApp Mesaj Gönder
+</a>
 
 </div>
-
-</section>
-
-<a class="whatsapp" href="https://wa.me/905XXXXXXXXX">WhatsApp</a>
 
 <footer>
 
-<p>© 2026 İmzaPort</p>
+© 2026 İmzaPort | Tüm Hakları Saklıdır
 
 </footer>
 
