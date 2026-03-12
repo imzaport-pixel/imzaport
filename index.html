@@ -1,59 +1,129 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>İmzaPort | E-İmza Hizmetleri</title>
+
+<title>İmzaPort | E-İmza Başvuru Merkezi</title>
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-color:white;
-text-align:center;
-background-image:url("arka-plan.jpg");
+background:#f5f7fb;
+}
+
+.hero{
+background:url("arkaplan.jpg");
 background-size:cover;
 background-position:center;
-background-attachment:fixed;
+height:600px;
+color:white;
+text-align:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 }
 
-.overlay{
-background:rgba(0,0,0,0.6);
-height:100vh;
-padding-top:100px;
+.logo{
+width:160px;
+margin-bottom:20px;
 }
 
-h1{
-font-size:50px;
-color:#00b7ff;
+.hero h1{
+font-size:48px;
+margin:10px;
 }
 
-h2{
-margin-top:10px;
+.hero p{
+font-size:20px;
+max-width:600px;
 }
 
-.box{
-background:rgba(255,255,255,0.1);
-width:320px;
-margin:auto;
-padding:20px;
-border-radius:10px;
+.btn{
+margin-top:20px;
+background:#0b63ce;
+color:white;
+padding:15px 30px;
+border-radius:8px;
+text-decoration:none;
+font-size:18px;
+}
+
+.section{
+padding:60px 20px;
+text-align:center;
+}
+
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
 margin-top:30px;
 }
 
-button{
-padding:12px 20px;
-border:none;
-background:#00b7ff;
-color:white;
-font-size:16px;
-border-radius:6px;
-cursor:pointer;
+.card{
+background:white;
+padding:25px;
+width:220px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-button:hover{
-background:#0095cc;
+.price{
+margin-top:30px;
+font-size:20px;
+}
+
+.form{
+max-width:400px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+background:#0b63ce;
+color:white;
+border:none;
+padding:12px;
+width:100%;
+border-radius:8px;
+font-size:16px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px 18px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:60px;
 }
 
 </style>
@@ -62,36 +132,89 @@ background:#0095cc;
 
 <body>
 
-<div class="overlay">
+<section class="hero">
 
-<h1>İMZAPORT</h1>
-<h2>E-İmza & Dijital Çözümler</h2>
+<img src="logo.png" class="logo">
 
-<div class="box">
+<h1>E-İMZA & DİJİTAL DÖNÜŞÜM</h1>
 
-<h3>Hizmetlerimiz</h3>
+<p>Resmi işlemlerinizi güvenli, hızlı ve yasal şekilde dijitale taşıyın.</p>
 
-<p>✔ Elektronik İmza</p>
-<p>✔ Mobil İmza</p>
-<p>✔ KEP Adresi</p>
-<p>✔ E-Fatura</p>
+<a href="#basvuru" class="btn">Başvuru Yap</a>
+
+</section>
+
+<section class="section">
+
+<h2>Hizmetlerimiz</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>E-İmza</h3>
+<p>Resmi belgelerde yasal ve güvenli imza.</p>
+</div>
+
+<div class="card">
+<h3>KEP Adresi</h3>
+<p>Resmi yazışmalar için güvenli e-posta.</p>
+</div>
+
+<div class="card">
+<h3>Mali Mühür</h3>
+<p>E-fatura işlemleri için zorunlu çözüm.</p>
+</div>
+
+<div class="card">
+<h3>Zaman Damgası</h3>
+<p>Belgelerin tarih ve bütünlüğünü korur.</p>
+</div>
 
 </div>
 
-<div class="box">
+<div class="price">
 
-<h3>İletişim</h3>
+<h2>Fiyatlarımız</h2>
 
-<p>📧 imzaport@gmail.com</p>
-<p>📞 0538 576 27 72</p>
-
-<a href="https://wa.me/905385762772">
-<button>WhatsApp Başvuru</button>
-</a>
+<p>3 Yıl → 2500 TL</p>
+<p>2 Yıl → 2300 TL</p>
+<p>1 Yıl → 1750 TL</p>
 
 </div>
 
+</section>
+
+<section id="basvuru" class="section">
+
+<div class="form">
+
+<h2>Online Başvuru</h2>
+
+<form action="https://formsubmit.co/mail@gmail.com" method="POST">
+
+<input type="text" name="Ad Soyad" placeholder="Ad Soyad" required>
+
+<input type="text" name="TC" placeholder="TC Kimlik No">
+
+<input type="text" name="Telefon" placeholder="Telefon" required>
+
+<input type="email" name="Email" placeholder="E-posta">
+
+<button type="submit">Başvuruyu Gönder</button>
+
+</form>
+
 </div>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/905XXXXXXXXX">WhatsApp</a>
+
+<footer>
+
+<p>© 2026 İmzaPort</p>
+
+</footer>
 
 </body>
 </html>
